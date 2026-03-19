@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function WorkoutScreen() {
+export default function CalendarScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Workout</Text>
-      <Text style={styles.subtitle}>Active session — coming soon</Text>
+      <Text style={styles.title}>Kalendarz</Text>
+      <Text style={styles.subtitle}>Schedule & reminders — coming soon</Text>
     </View>
   );
 }

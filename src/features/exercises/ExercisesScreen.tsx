@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function HistoryScreen() {
+export default function ExercisesScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>History</Text>
-      <Text style={styles.subtitle}>Past sessions — coming soon</Text>
+      <Text style={styles.title}>Ćwiczenia</Text>
+      <Text style={styles.subtitle}>Exercise library — coming soon</Text>
     </View>
   );
 }

@@ -252,17 +252,32 @@ firestore/
 │
 ├── workouts/{workoutId}
 │   ├── userId: string
+│   ├── startType: 'suggested' | 'plan' | 'free'
+│   ├── planId?: string
 │   ├── date: Timestamp
+│   ├── setsPerExercise: number
 │   ├── exercises: WorkoutExercise[]
 │   └── totalVolume: number
 │
-└── plans/{planId}
+├── plans/{planId}
+│   ├── userId: string
+│   ├── name: string
+│   ├── setsPerExercise: number
+│   ├── restBetweenSets: number
+│   ├── muscleGroups: PlanMuscleGroup[]
+│   └── isActive: boolean
+│
+└── records/{recordId}           (personal bests)
     ├── userId: string
-    ├── name: string
-    └── days: PlanDay[]
+    ├── exerciseId: string
+    ├── bestWeight: number
+    ├── bestReps: number
+    ├── bestVolume: number
+    ├── achievedAt: Timestamp
+    └── sessionId: string
 ```
 
-Security rules: users read/write only their own `workouts` and `plans`. `exercises` is public read.
+Security rules: users read/write only their own `workouts`, `plans`, `records`. `exercises` is public read.
 
 ---
 
@@ -274,15 +289,30 @@ RootNavigator  (src/navigation/RootNavigator.tsx)
 │   ├── LoginScreen
 │   └── RegisterScreen
 │
-└── AppStack
-    └── BottomTabNavigator  (src/navigation/AppNavigator.tsx)
-        ├── Dashboard   → src/features/workout/DashboardScreen.tsx
-        ├── Workout     → src/features/workout/WorkoutScreen.tsx
-        ├── History     → src/features/analytics/HistoryScreen.tsx
-        └── Plans       → src/features/plans/PlansScreen.tsx
+└── AppStack   (src/navigation/AppNavigator.tsx)
+    ├── Tabs (BottomTabNavigator)
+    │   ├── Exercises  → src/features/exercises/ExercisesScreen.tsx
+    │   ├── Plans      → src/features/plans/PlansScreen.tsx
+    │   ├── Records    → src/features/records/RecordsScreen.tsx  (Osiągi)
+    │   └── Calendar   → src/features/calendar/CalendarScreen.tsx
+    │
+    │   [FAB] "Rozpocznij trening" → navigates to StartWorkout
+    │
+    ├── StartWorkout   → src/features/workout/StartWorkoutScreen.tsx
+    │   "Co dziś robimy?" — 3 options:
+    │     1. Sugerowany plan   (mode: 'suggested')
+    │     2. Wybierz plan      (mode: 'plan')
+    │     3. Wybierz ćwiczenia (mode: 'free')
+    │
+    ├── ChooseMuscleGroups     (plan selection / suggestion / free pick)
+    ├── ExercisePicker         (sorted by least recently done within muscle group)
+    ├── ActiveSession          (set logging + rest timer + Osiągi suggestion)
+    ├── SessionSummary         (total volume, PRs broken)
+    ├── ExerciseDetail         (progress charts for one exercise)
+    ├── PlanEditor             (create/edit plan)
+    ├── SessionDetail          (historical session detail)
+    └── Settings
 ```
-
-Future stack screens (not yet added): `ExerciseDetail`, `PlanEditor`, `SessionDetail`, `Settings`
 
 ---
 
@@ -343,7 +373,8 @@ EXPO_PUBLIC_FIREBASE_APP_ID=
 | Date | Version | Change | Agent | Branch |
 |---|---|---|---|---|
 | 2026-03-19 | 0.1.0 | Initial documentation structure | Project Manager | main |
-| 2026-03-19 | 0.2.0 | Expo scaffold, navigation structure, type definitions, ESLint/Prettier | Project Manager | main |
+| 2026-03-19 | 0.2.0 | Expo scaffold, navigation structure, TypeScript types, ESLint/Prettier | Project Manager | main |
+| 2026-03-19 | 0.3.0 | Architecture revision based on app flow diagram: new data models (PlanMuscleGroup, WorkoutStartType, ExerciseRecord), redesigned navigation (4 tabs + FAB), StartWorkoutScreen with 3 modes | Project Manager | main |
 
 ---
 

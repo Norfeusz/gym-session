@@ -1,220 +1,239 @@
 # Gym Session — User Manual
 
-> **Version:** 0.1 (draft — updated as features are built)
-> **Platform:** Android and iOS
+> **Version:** 0.2 (draft — updated as features are built)
+> **Platform:** Android i iOS
 
 ---
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
-2. [Creating an Account](#creating-an-account)
-3. [Dashboard](#dashboard)
-4. [Training Plans](#training-plans)
-5. [Starting a Workout](#starting-a-workout)
-6. [Logging Sets](#logging-sets)
-7. [Rest Timer](#rest-timer)
-8. [Finishing a Workout](#finishing-a-workout)
-9. [Workout History](#workout-history)
-10. [Progress & Charts](#progress--charts)
-11. [Exercise Library](#exercise-library)
-12. [Notifications & Reminders](#notifications--reminders)
-13. [Settings](#settings)
+1. [Pierwsze uruchomienie](#pierwsze-uruchomienie)
+2. [Tworzenie konta](#tworzenie-konta)
+3. [Nawigacja w aplikacji](#nawigacja-w-aplikacji)
+4. [Plany treningowe](#plany-treningowe)
+5. [Rozpoczęcie treningu](#rozpoczęcie-treningu)
+6. [Logowanie serii](#logowanie-serii)
+7. [Timer przerwy](#timer-przerwy)
+8. [Zakończenie treningu](#zakończenie-treningu)
+9. [Osiągi i rekordy](#osiągi-i-rekordy)
+10. [Kalendarz treningowy](#kalendarz-treningowy)
+11. [Biblioteka ćwiczeń](#biblioteka-ćwiczeń)
+12. [Powiadomienia](#powiadomienia)
+13. [Ustawienia](#ustawienia)
 14. [FAQ](#faq)
 
 ---
 
-## Getting Started
+## Pierwsze uruchomienie
 
-When you first open **Gym Session**, you will be prompted to create an account or log in.
-Your data is stored securely in the cloud — accessible from any device.
-
----
-
-## Creating an Account
-
-1. Tap **Sign Up** on the welcome screen.
-2. Enter your **email address** and a **password** (min. 8 characters).
-3. Tap **Create Account**.
-4. You will be taken straight to your Dashboard.
-
-> Already have an account? Tap **Log In** and enter your credentials.
+Przy pierwszym otwarciu **Gym Session** zostaniesz poproszony o założenie konta lub zalogowanie się.
+Dane są przechowywane bezpiecznie w chmurze — dostępne na każdym urządzeniu.
 
 ---
 
-## Dashboard
+## Tworzenie konta
 
-The Dashboard is your home screen. It shows:
+1. Na ekranie powitalnym naciśnij **Zarejestruj się**.
+2. Podaj **adres e-mail** i **hasło** (min. 8 znaków).
+3. Naciśnij **Utwórz konto**.
+4. Zostaniesz przeniesiony do głównego ekranu aplikacji.
 
-- **Today's suggested workout** — based on your active training plan.
-- **Quick Start** — jump into a session with one tap.
-- **Recent sessions** — a glance at your last 3 workouts.
-- **Weekly streak** — how many days you have trained this week.
-
----
-
-## Training Plans
-
-A Training Plan defines which exercises you do on which days.
-You can create multiple plans and switch between them.
-
-### Creating a Plan
-
-1. Go to the **Plans** tab.
-2. Tap **+ New Plan**.
-3. Name your plan and choose how many days per week you train.
-4. For each training day:
-   - Tap **+ Add Exercise** and search the exercise library.
-   - Set **target sets**, **target reps** (e.g. 3 x 8-12), and optionally a starting **weight**.
-5. Tap **Save Plan** then **Set as Active**.
-
-### Editing a Plan
-
-Plans tab → tap plan name → tap the pencil icon.
-
-### Deleting a Plan
-
-Plans tab → swipe left on the plan → tap Delete.
+> Masz już konto? Naciśnij **Zaloguj się** i podaj swoje dane.
 
 ---
 
-## Starting a Workout
+## Nawigacja w aplikacji
 
-**Option A — From Dashboard:**
-Tap **Start Today's Workout** — exercises are pre-filled from your plan.
+W dolnej części ekranu znajdują się cztery zakładki:
 
-**Option B — Manual:**
-Workout tab → tap **+ New Session** → add exercises manually.
-
----
-
-## Logging Sets
-
-For each exercise during a session:
-
-1. You will see a list of planned sets.
-2. For each set, enter:
-   - **Weight** (kg)
-   - **Reps** performed
-   - **RPE** (optional) — Rate of Perceived Exertion, 1-10 scale
-3. Tap the checkmark to confirm the set.
-4. The rest timer starts automatically.
-
-Tip: Enter the actual numbers you did, not what was planned. The app tracks reality.
-
----
-
-## Rest Timer
-
-After confirming a set, a timer appears at the bottom of the screen.
-
-- Default rest: **90 seconds** (adjustable in Settings).
-- A sound plays when the timer ends.
-- Tap **Skip** to dismiss early, or **+30s** to extend.
-
----
-
-## Finishing a Workout
-
-1. Tap **Finish Workout**.
-2. Add optional session notes.
-3. Tap **Save**.
-
-A summary screen shows:
-- Total session duration
-- Total volume (kg x reps across all sets)
-- Personal records broken (if any)
-
----
-
-## Workout History
-
-History tab shows all past sessions grouped by date.
-
-- Tap any session to see the full breakdown.
-- Swipe left on a session to delete it.
-
----
-
-## Progress & Charts
-
-Inside any **exercise detail** page (tap an exercise name in History):
-
-- **Weight over time** — line chart of your max weight per session.
-- **Volume over time** — total load per session.
-- **Best set** — your all-time personal record.
-
-On the **Analytics screen** (accessible from the History tab):
-
-- **Weekly volume** — bar chart of total kg lifted per week.
-- **Muscle group frequency** — which muscles you have trained how often.
-- **Consistency calendar** — a contribution-style heatmap of your training days.
-
----
-
-## Exercise Library
-
-The app comes with 100+ built-in exercises, each with:
-- Name and targeted muscle groups
-- Equipment required
-- Short description
-
-### Finding an Exercise
-
-- Use the **search bar** to find by name.
-- Filter by **muscle group** or **equipment**.
-
-### Adding a Custom Exercise
-
-Tap **+ Add Custom Exercise**, fill in the details, and save.
-Custom exercises are tied to your account and appear in all searches.
-
----
-
-## Notifications & Reminders
-
-Settings → Notifications:
-
-| Notification | Description | Default |
-|---|---|---|
-| Daily reminder | "Time to train!" at your chosen time | Off |
-| Rest timer alert | Sound when rest period ends | On |
-| Weekly summary | Sunday recap of your week | Off |
-
-The app will ask for system notification permission the first time you enable any notification.
-
----
-
-## Settings
-
-Access via the profile icon (top-right on Dashboard).
-
-| Setting | Description |
+| Zakładka | Opis |
 |---|---|
-| Default rest time | Global rest timer duration in seconds |
-| Weight unit | kg or lbs |
-| Dark / Light mode | Visual theme |
-| Notifications | Configure reminders |
-| Change email | Update your login email |
-| Change password | Update your password |
-| Log out | Sign out of the app |
-| Delete account | Permanently delete all your data |
+| **Ćwiczenia** | Biblioteka ćwiczeń — przeglądaj, filtruj, dodawaj własne |
+| **Plany** | Twoje plany treningowe |
+| **Osiągi** | Rekordy osobiste i wykresy postępu |
+| **Kalendarz** | Planowanie dni treningowych i przypomnienia |
+
+### Przycisk „Rozpocznij trening"
+
+Duży niebieski przycisk **Rozpocznij trening** widoczny nad dolnym paskiem nawigacji uruchamia nowy trening z dowolnego miejsca w aplikacji.
+
+---
+
+## Plany treningowe
+
+Plan treningowy definiuje **strukturę** sesji — jakie partie mięśniowe ćwiczysz i ile ćwiczeń na każdą partię. Konkretne ćwiczenia wybierasz podczas treningu.
+
+### Tworzenie planu
+
+1. Przejdź do zakładki **Plany**.
+2. Naciśnij **+ Nowy plan**.
+3. Nadaj planowi nazwę.
+4. Ustaw:
+   - **Partie mięśniowe** — jakie partie mięśni ćwiczysz (np. klatka + plecy), ile ćwiczeń na każdą partię
+   - **Serie na ćwiczenie** — jedna wartość dla całej sesji (np. 4 serie każde ćwiczenie)
+   - **Przerwa między seriami** — czas w sekundach
+5. Naciśnij **Zapisz plan**, a następnie opcjonalnie ustaw go jako aktywny.
+
+> **Przykład:** Plan „Push" — klatka (3 ćwiczenia), barki (2 ćwiczenia), triceps (2 ćwiczenia), 4 serie, 90 s przerwy.
+
+### Edycja planu
+
+Zakładka Plany → naciśnij nazwę planu → naciśnij ikonę ołówka.
+
+### Usunięcie planu
+
+Zakładka Plany → przesuń plan w lewo → naciśnij Usuń.
+
+---
+
+## Rozpoczęcie treningu
+
+Naciśnij **Rozpocznij trening** (niebieski przycisk na dole ekranu).  
+Pojawi się ekran **„Co dziś robimy?"** z trzema opcjami:
+
+| Opcja | Opis |
+|---|---|
+| **Sugerowany trening** | Aplikacja automatycznie sugeruje partie mięśni na podstawie historii — najmniej niedawno ćwiczone partie idą pierwsze |
+| **Wybierz plan** | Wybierasz jeden z Twoich planów treningowych — aplikacja zaproponuje odpowiednie partie |
+| **Wolny trening** | Samodzielnie wybierasz partie mięśni i ćwiczenia, bez planu |
+
+Po wyborze opcji:
+1. **Potwierdź lub zmień partie mięśni** (ekran wyboru partii).
+2. Dla każdej partii **wybierz ćwiczenia** z listy (posortowane od najdawniej wykonywanych na górze).
+3. Zacznij trening — zostaniesz przeniesiony do aktywnej sesji.
+
+---
+
+## Logowanie serii
+
+Dla każdego ćwiczenia podczas sesji:
+
+1. Przed ćwiczeniem widzisz **wynik z ostatniej sesji** (ciężar i powtórzenia) — jako podpowiedź startowa.
+2. Dla każdej serii wpisz:
+   - **Ciężar** (kg)
+   - **Powtórzenia** wykonane
+3. Naciśnij ptaszek, aby zatwierdzić serię.
+4. Timer przerwy uruchamia się automatycznie.
+
+> Jeśli wynik jest **lepszy niż Twój rekord** — aplikacja zapyta, czy zapisać go jako nowy rekord osobisty.
+
+---
+
+## Timer przerwy
+
+Po zatwierdzeniu serii na dole ekranu pojawia się timer.
+
+- Domyślna przerwa: **czas z planu** lub 90 sekund (jeśli trening wolny).
+- Dźwięk sygnalizuje koniec przerwy.
+- Naciśnij **Pomiń**, aby skrócić, lub **+30 s**, aby wydłużyć.
+
+---
+
+## Zakończenie treningu
+
+1. Naciśnij **Zakończ trening**.
+2. Dodaj opcjonalne notatki.
+3. Naciśnij **Zapisz**.
+
+Ekran podsumowania pokazuje:
+- Łączny czas sesji
+- Łączny wolumen (kg × powtórzenia)
+- Pobite rekordy osobiste (jeśli są)
+
+---
+
+## Osiągi i rekordy
+
+Zakładka **Osiągi** pokazuje Twoje rekordy osobiste i postępy.
+
+### Zakładka Rekordy
+
+Lista wszystkich ćwiczeń, dla których masz zalogowane wyniki, wraz z:
+- Najlepszym ciężarem (1RM estymacja lub bezpośredni rekord)
+- Datą osiągnięcia rekordu
+
+### Wykres postępu
+
+Naciśnij nazwę ćwiczenia, aby zobaczyć:
+- **Ciężar w czasie** — wykres liniowy maksymalnego ciężaru na sesję
+- **Wolumen w czasie** — łączne kg na sesję
+
+---
+
+## Kalendarz treningowy
+
+Zakładka **Kalendarz** pozwala zaplanować dni treningowe z wyprzedzeniem.
+
+1. Naciśnij dzień na kalendarzu.
+2. Naciśnij **Zaplanuj trening**.
+3. Opcjonalnie przypisz plan do tego dnia.
+4. Włącz **Przypomnienie** — aplikacja wyśle powiadomienie w zaplanowanym dniu.
+
+> Aplikacja poprosi o zgodę na powiadomienia przy pierwszym włączeniu tej funkcji.
+
+---
+
+## Biblioteka ćwiczeń
+
+Zakładka **Ćwiczenia** zawiera ponad 100 wbudowanych ćwiczeń, każde z:
+- Nazwą i targetowaną partią mięśniową
+- Wymaganym sprzętem
+- Krótkim opisem
+
+### Wyszukiwanie ćwiczenia
+
+- Użyj **paska wyszukiwania**, aby znaleźć po nazwie.
+- Filtruj według **partii mięśniowej** lub **sprzętu**.
+
+### Dodawanie własnego ćwiczenia
+
+Naciśnij **+ Dodaj ćwiczenie**, wypełnij dane i zapisz.
+Własne ćwiczenia są przypisane do konta i pojawiają się we wszystkich wyszukiwaniach.
+
+---
+
+## Powiadomienia
+
+Ustawienia → Powiadomienia:
+
+| Powiadomienie | Opis | Domyślnie |
+|---|---|---|
+| Przypomnienie o treningu | Powiadomienie w zaplanowany dzień treningowy | Wył. |
+| Alert timera przerwy | Dźwięk po zakończeniu przerwy między seriami | Wł. |
+| Tygodniowe podsumowanie | Niedzielne zestawienie tygodnia | Wył. |
+
+---
+
+## Ustawienia
+
+Dostęp przez ikonę profilu w prawym górnym rogu.
+
+| Ustawienie | Opis |
+|---|---|
+| Domyślny czas przerwy | Czas timera przerwy w sekundach |
+| Jednostka ciężaru | kg lub lbs |
+| Tryb ciemny / jasny | Motyw wizualny |
+| Powiadomienia | Konfiguracja przypomnień |
+| Zmień e-mail | Aktualizacja adresu e-mail |
+| Zmień hasło | Aktualizacja hasła |
+| Wyloguj | Wylogowanie z aplikacji |
+| Usuń konto | Trwałe usunięcie wszystkich danych |
 
 ---
 
 ## FAQ
 
-**Q: Is my data backed up?**
-A: Yes — all data syncs to Firebase. Log in on any device and your history is there.
+**P: Czy dane są bezpieczne?**
+O: Tak — wszystkie dane synchronizują się z Firebase. Zaloguj się na dowolnym urządzeniu i historia jest dostępna.
 
-**Q: Can I use the app offline?**
-A: Workout logging works offline. Data syncs automatically when you reconnect.
+**P: Czy mogę używać aplikacji offline?**
+O: Logowanie sesji działa offline. Dane synchronizują się automatycznie po przywróceniu połączenia.
 
-**Q: Can I export my data?**
-A: Not yet — planned for a future release.
+**P: Czy mogę eksportować dane?**
+O: Jeszcze nie — planowane w przyszłej wersji.
 
-**Q: Is the app free?**
-A: Yes, currently free for all users.
+**P: Czy aplikacja jest bezpłatna?**
+O: Tak, obecnie bezpłatna dla wszystkich użytkowników.
 
 ---
 
