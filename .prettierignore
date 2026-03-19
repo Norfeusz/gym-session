@@ -1,0 +1,25 @@
+# env
+.env
+.env.local
+.env.*.local
+
+# expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
